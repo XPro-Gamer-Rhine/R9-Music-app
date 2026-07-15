@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>R9 Music — the audiophile player for iPhone & iPad</title>
+<style>
+  :root { color-scheme: dark; }
+  * { margin: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         background: #07060e; color: #eef; overflow-x: hidden; }
+  .bg { position: fixed; inset: -20%; z-index: -1; filter: blur(90px); opacity: .5;
+        background:
+          radial-gradient(42% 55% at 25% 28%, #6a3df0 0%, transparent 70%),
+          radial-gradient(45% 60% at 76% 30%, #2457ff 0%, transparent 70%),
+          radial-gradient(35% 45% at 70% 80%, #e0553a 0%, transparent 70%);
+        animation: drift 28s ease-in-out infinite alternate; }
+  @keyframes drift {
+    0% { transform: translate(0,0) scale(1); }
+    100% { transform: translate(-4%, 3%) scale(1.12) rotate(-3deg); }
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 72px 24px 64px; text-align: center; }
+  h1 { font-size: 44px; letter-spacing: -.5px; }
+  .tag { color: #b9b3d9; font-size: 19px; margin-top: 8px; }
+  .badge { display: inline-block; margin: 20px 0; padding: 7px 16px; font-size: 12px;
+           font-weight: 700; letter-spacing: 1.5px; border: 1px solid #6d5bd033;
+           border-radius: 999px; color: #cfc6ff; background: #ffffff0a; }
+  .shots { display: flex; gap: 22px; justify-content: center; flex-wrap: wrap; margin: 34px 0; }
+  .shots img { width: 250px; border-radius: 28px; border: 1px solid #ffffff18;
+               box-shadow: 0 24px 70px rgba(60,30,160,.5); }
+  .grid { display: grid; gap: 14px; margin-top: 26px;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); text-align: left; }
+  .card { padding: 18px; background: #ffffff08; border: 1px solid #ffffff10; border-radius: 16px; }
+  .card h3 { font-size: 15px; margin-bottom: 6px; }
+  .card p { font-size: 13px; color: #b9b3d9; line-height: 1.5; }
+  footer { margin-top: 54px; font-size: 12px; color: #776f99; }
+  a { color: #9f8bff; }
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<main>
+  <h1>R9 Music</h1>
+  <p class="tag">The audiophile player for iPhone &amp; iPad — with the whole R9-EQ engine inside.</p>
+  <div class="badge">COMING TO THE APP STORE</div>
+
+  <div class="shots">
+    <img src="nowplaying.png" alt="Now Playing — living fluid artwork and visualizer">
+    <img src="library.png" alt="Library with high-res badges" onerror="this.remove()">
+  </div>
+
+  <div class="grid">
+    <div class="card"><h3>🎧 True high-res playback</h3>
+      <p>FLAC, ALAC, WAV, AIFF, MP3, AAC — 24-bit/96 kHz+ stays high-res through the whole pipeline. HR badges show what you're really playing.</p></div>
+    <div class="card"><h3>🎚 The R9-EQ engine</h3>
+      <p>10-band EQ with 22 tunings, saved profiles, and PRO parametric mode — every band's frequency, Q and filter type editable, Pro-Q style.</p></div>
+    <div class="card"><h3>🧪 Virtual Driver studio</h3>
+      <p>Build a virtual IEM from stacked driver technologies, or rebuild any of 1,088 real IEMs — and hear it on your music instantly.</p></div>
+    <div class="card"><h3>🌐 Community song EQs</h3>
+      <p>Share the perfect EQ for a song, auto-load the community's best per track, up-vote favorites — synced with the macOS R9-EQ community.</p></div>
+    <div class="card"><h3>🌊 Living artwork</h3>
+      <p>Tracks without covers get a unique GPU fluid animation; the visualizer dances in the album's own colors.</p></div>
+    <div class="card"><h3>🍏 Native to the core</h3>
+      <p>Pure Apple frameworks — AVFoundation, Metal, SwiftUI. Background playback, lock-screen controls, zero telemetry.</p></div>
+  </div>
+
+  <footer>© 2026 Rhineul Islam · sibling of <a href="https://xpro-gamer-rhine.github.io/R9-EQ-app/">R9-EQ for macOS</a> and <a href="https://xpro-gamer-rhine.github.io/R9-Motion-app/">R9 Motion</a></footer>
+</main>
+</body>
+</html>
