@@ -9,7 +9,7 @@ visualizer.
 
 ## Android — download
 
-[**Latest release**](https://github.com/XPro-Gamer-Rhine/R9-Music-app/releases/latest)
+[**Downloads**](https://github.com/XPro-Gamer-Rhine/R9-Music-app/releases)
 · Android 9 and newer · free, no account, no telemetry.
 
 | File | For |
