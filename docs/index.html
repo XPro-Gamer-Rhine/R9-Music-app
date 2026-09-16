@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>R9 Music — the audiophile player for iPhone & iPad</title>
+<title>R9 Music — the audiophile player for iPhone, iPad &amp; Android</title>
 <style>
   :root { color-scheme: dark; }
   * { margin: 0; box-sizing: border-box; }
@@ -35,14 +35,45 @@
   .card p { font-size: 13px; color: #b9b3d9; line-height: 1.5; }
   footer { margin-top: 54px; font-size: 12px; color: #776f99; }
   a { color: #9f8bff; }
+  .dl { margin: 30px auto 6px; padding: 22px; max-width: 640px; text-align: left;
+        background: #ffffff09; border: 1px solid #ffffff14; border-radius: 20px; }
+  .dl h2 { font-size: 20px; margin-bottom: 4px; }
+  .dl .sub { font-size: 13px; color: #b9b3d9; margin-bottom: 16px; }
+  .btn { display: inline-block; margin: 5px 6px 5px 0; padding: 11px 18px; font-size: 14px;
+         font-weight: 650; border-radius: 12px; text-decoration: none;
+         background: linear-gradient(180deg, #7b5cff, #5b3fe0); color: #fff;
+         border: 1px solid #ffffff22; }
+  .btn.alt { background: #ffffff10; color: #cfc6ff; font-weight: 550; }
+  .note { font-size: 12px; color: #8f87b4; line-height: 1.6; margin-top: 12px; }
+  .beta { display: inline-block; margin-left: 8px; padding: 3px 9px; font-size: 10px;
+          font-weight: 800; letter-spacing: 1px; border-radius: 999px;
+          background: #e0553a26; color: #ff9d86; border: 1px solid #e0553a44; }
+
 </style>
 </head>
 <body>
 <div class="bg"></div>
 <main>
   <h1>R9 Music</h1>
-  <p class="tag">The audiophile player for iPhone &amp; iPad — with the whole R9-EQ engine inside.</p>
-  <div class="badge">COMING TO THE APP STORE</div>
+  <p class="tag">The audiophile player for iPhone, iPad &amp; Android — with the whole R9-EQ engine inside.</p>
+  <div class="badge">iOS &amp; iPadOS — COMING TO THE APP STORE</div>
+
+  <div class="dl">
+    <h2>Android<span class="beta">BETA</span></h2>
+    <p class="sub">Android 9 and newer. Free, no account, no telemetry.</p>
+    <a class="btn" href="https://github.com/XPro-Gamer-Rhine/R9-Music-app/releases/latest/download/R9Music-0.1.0-beta.1-arm64-v8a.apk">Download APK · arm64</a>
+    <a class="btn alt" href="https://github.com/XPro-Gamer-Rhine/R9-Music-app/releases/latest/download/R9Music-0.1.0-beta.1-universal.apk">Universal APK</a>
+    <a class="btn alt" href="https://github.com/XPro-Gamer-Rhine/R9-Music-app/releases/latest">All downloads</a>
+    <p class="note">
+      <strong>arm64</strong> fits almost every phone made since 2017 — start there; grab the
+      <strong>universal</strong> build if it refuses to install. Open the file and allow your
+      browser to install apps when Android asks; that prompt is Android's, not the app's.
+      Checksums are in <a href="https://github.com/XPro-Gamer-Rhine/R9-Music-app/releases/latest">SHA256SUMS.txt</a>.<br>
+      This first build is a <strong>beta</strong>: the engine, the EQ and the Virtual Driver are
+      done, but the visual polish is still landing. iPhone and iPad are coming to the App Store.
+    </p>
+  </div>
+
 
   <div class="shots">
     <img src="nowplaying.png" alt="Now Playing — living fluid artwork and visualizer">
@@ -60,8 +91,8 @@
       <p>Share the perfect EQ for a song, auto-load the community's best per track, up-vote favorites — synced with the macOS R9-EQ community.</p></div>
     <div class="card"><h3>🌊 Living artwork</h3>
       <p>Tracks without covers get a unique GPU fluid animation; the visualizer dances in the album's own colors.</p></div>
-    <div class="card"><h3>🍏 Native to the core</h3>
-      <p>Pure Apple frameworks — AVFoundation, Metal, SwiftUI. Background playback, lock-screen controls, zero telemetry.</p></div>
+    <div class="card"><h3>🍏 Native on both</h3>
+      <p>Apple frameworks on iOS; on Android, its own C++ audio engine on AAudio — because no stock Android equalizer can do this. Background playback, lock-screen controls, zero telemetry.</p></div>
   </div>
 
   <footer>© 2026 Rhineul Islam · sibling of <a href="https://xpro-gamer-rhine.github.io/R9-EQ-app/">R9-EQ for macOS</a> and <a href="https://xpro-gamer-rhine.github.io/R9-Motion-app/">R9 Motion</a></footer>
